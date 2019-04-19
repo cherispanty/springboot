@@ -20,4 +20,7 @@ public interface EmployeeMapper {
 
     @Delete("delete from employee where id = #{id}")
     Integer delete(Integer id);
+
+    @Select("select * from employee where lastName = #{lastName}")
+    Employee getEmpByLastName(String lastName);
 }

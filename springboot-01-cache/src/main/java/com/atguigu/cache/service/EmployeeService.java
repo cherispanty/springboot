@@ -10,4 +10,5 @@ public interface EmployeeService {
     Employee get(Integer id);
     Employee update(Employee employee);
     Integer delete(Integer id);
+    Employee getEmpByLastName(String lastName);
 }

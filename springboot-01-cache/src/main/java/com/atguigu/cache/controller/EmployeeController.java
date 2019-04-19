@@ -41,4 +41,10 @@ public class EmployeeController {
             return "fail";
         }
     }
+
+    @GetMapping("/emp/lastname/{lastName}")
+    @ResponseBody
+    public Employee getEmpByLastName(@PathVariable("lastName") String lastName) {
+            return employeeService.getEmpByLastName(lastName);
+    }
 }
